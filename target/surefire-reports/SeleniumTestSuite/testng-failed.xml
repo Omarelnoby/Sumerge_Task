@@ -6,8 +6,9 @@
       <class name="com.example.tests.reservation_test">
         <methods>
           <include name="setup"/>
+          <include name="test_printed_date" invocation-numbers="0"/>
           <include name="close"/>
-          <include name="testValidReservation"/>
+          <include name="test_printed_hotel_name" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.example.tests.reservation_test -->
     </classes>

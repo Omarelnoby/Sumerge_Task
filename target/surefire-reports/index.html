@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-SeleniumTestSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SeleniumTestSuite" title="com.example.tests.reservation_test" class="method navigator-link" hash-for-method="testValidReservation">testValidReservation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SeleniumTestSuite" title="com.example.tests.reservation_test" class="method navigator-link" hash-for-method="test_printed_date(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)">test_printed_date(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestSuite" title="com.example.tests.reservation_test" class="method navigator-link" hash-for-method="test_printed_hotel_name(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)">test_printed_hotel_name(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-SeleniumTestSuite -->
@@ -125,18 +130,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testValidReservation">
-                  </a> <!-- testValidReservation -->
-                  <span class="method-name">testValidReservation</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-testid=&apos;title&apos; and contains(text(), &apos;Tolip Hotel Alexandria&apos;)]/ancestor::div[@data-testid=&apos;property-card&apos;]//div[contains(@class, &apos;e4adce92df&apos;)]&quot;}
+                  <a name="test_printed_date(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)">
+                  </a> <!-- test_printed_date(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2) -->
+                  <span class="method-name">test_printed_date</span>
+                  <span class="parameters">(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[value=&apos;1&apos;][name=&apos;bedPreference_78883120&apos;]&quot;}
   (Session info: chrome=134.0.6998.118)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0829a86f2cad3d2d8ed5ef7ed36a7df3, findElement {using=xpath, value=//div[@data-testid=&apos;title&apos; and contains(text(), &apos;Tolip Hotel Alexandria&apos;)]/ancestor::div[@data-testid=&apos;property-card&apos;]//div[contains(@class, &apos;e4adce92df&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61277/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0829a86f2cad3d2d8ed5ef7ed36a7df3
+Command: [61b6d7076e8e41da1fd0b5dbc7a41898, findElement {using=css selector, value=input[value=&apos;1&apos;][name=&apos;bedPreference_78883120&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56442/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61b6d7076e8e41da1fd0b5dbc7a41898
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -148,8 +154,41 @@ Session ID: 0829a86f2cad3d2d8ed5ef7ed36a7df3
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.example.pages.reservation.select_hotel(reservation.java:55)
-	at com.example.tests.reservation_test.testValidReservation(reservation_test.java:31)
+	at com.example.pages.reservation.confirmation(reservation.java:110)
+	at com.example.tests.reservation_test.test_printed_date(reservation_test.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_printed_hotel_name(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)">
+                  </a> <!-- test_printed_hotel_name(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2) -->
+                  <span class="method-name">test_printed_hotel_name</span>
+                  <span class="parameters">(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[value=&apos;1&apos;][name=&apos;bedPreference_78883120&apos;]&quot;}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [480cce76c6e5c60c4391bd7e9b5d09fd, findElement {using=css selector, value=input[value=&apos;1&apos;][name=&apos;bedPreference_78883120&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56703/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 480cce76c6e5c60c4391bd7e9b5d09fd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.example.pages.reservation.confirmation(reservation.java:110)
+	at com.example.tests.reservation_test.test_printed_hotel_name(reservation_test.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -209,16 +248,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testValidReservation')
+data.setCell(0, 1, 'test_printed_date')
 data.setCell(0, 2, 'com.example.tests.reservation_test')
-data.setCell(0, 3, 18087);
+data.setCell(0, 3, 35264);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_printed_hotel_name')
+data.setCell(1, 2, 'com.example.tests.reservation_test')
+data.setCell(1, 3, 29138);
 window.suiteTableData['SeleniumTestSuite']= { tableData: data, tableDiv: 'times-div-SeleniumTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-SeleniumTestSuite">
               </div> <!-- times-div-SeleniumTestSuite -->
             </div> <!-- times-div -->
@@ -252,12 +295,26 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testValidReservation</span>
-                <span class="method-start">7006 ms</span>
+                <span class="method-name">test_printed_date(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)</span>
+                <span class="method-start">9882 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">25106 ms</span>
+                <span class="method-start">45158 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">45201 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_printed_hotel_name(Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2)</span>
+                <span class="method-start">50143 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">79282 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

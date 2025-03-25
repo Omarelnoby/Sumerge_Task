@@ -1,39 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-24T23:06:12 EET" name="SeleniumTestSuite" finished-at="2025-03-24T23:06:37 EET" duration-ms="25142">
+  <suite started-at="2025-03-25T10:17:51 EET" name="SeleniumTestSuite" finished-at="2025-03-25T10:19:12 EET" duration-ms="81059">
     <groups>
     </groups>
-    <test started-at="2025-03-24T23:06:12 EET" name="RegressionTests" finished-at="2025-03-24T23:06:37 EET" duration-ms="25142">
+    <test started-at="2025-03-25T10:17:51 EET" name="RegressionTests" finished-at="2025-03-25T10:19:12 EET" duration-ms="81059">
       <class name="com.example.tests.reservation_test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.reservation_test@7c0c77c7]" started-at="2025-03-24T23:06:12 EET" name="setup" finished-at="2025-03-24T23:06:19 EET" duration-ms="7005" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.reservation_test@5cee5251]" started-at="2025-03-25T10:17:52 EET" name="setup" finished-at="2025-03-25T10:18:02 EET" duration-ms="9880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testValidReservation()[pri:0, instance:com.example.tests.reservation_test@7c0c77c7]" started-at="2025-03-24T23:06:19 EET" name="testValidReservation" finished-at="2025-03-24T23:06:37 EET" duration-ms="18087" status="FAIL">
+        <test-method signature="test_printed_date(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.example.tests.reservation_test@5cee5251]" started-at="2025-03-25T10:18:02 EET" name="test_printed_date" data-provider="ExcelData" finished-at="2025-03-25T10:18:37 EET" duration-ms="35264" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alexandria]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tolip Hotel Alexandria]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[22/05/2025]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[25/06/2025]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[twin]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-testid='title' and contains(text(), 'Tolip Hotel Alexandria')]/ancestor::div[@data-testid='property-card']//div[contains(@class, 'e4adce92df')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[value='1'][name='bedPreference_78883120']"}
   (Session info: chrome=134.0.6998.118)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0829a86f2cad3d2d8ed5ef7ed36a7df3, findElement {using=xpath, value=//div[@data-testid='title' and contains(text(), 'Tolip Hotel Alexandria')]/ancestor::div[@data-testid='property-card']//div[contains(@class, 'e4adce92df')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61277/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0829a86f2cad3d2d8ed5ef7ed36a7df3]]>
+Command: [61b6d7076e8e41da1fd0b5dbc7a41898, findElement {using=css selector, value=input[value='1'][name='bedPreference_78883120']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56442/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61b6d7076e8e41da1fd0b5dbc7a41898]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-testid='title' and contains(text(), 'Tolip Hotel Alexandria')]/ancestor::div[@data-testid='property-card']//div[contains(@class, 'e4adce92df')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[value='1'][name='bedPreference_78883120']"}
   (Session info: chrome=134.0.6998.118)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0829a86f2cad3d2d8ed5ef7ed36a7df3, findElement {using=xpath, value=//div[@data-testid='title' and contains(text(), 'Tolip Hotel Alexandria')]/ancestor::div[@data-testid='property-card']//div[contains(@class, 'e4adce92df')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61277/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0829a86f2cad3d2d8ed5ef7ed36a7df3
+Command: [61b6d7076e8e41da1fd0b5dbc7a41898, findElement {using=css selector, value=input[value='1'][name='bedPreference_78883120']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56442/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61b6d7076e8e41da1fd0b5dbc7a41898
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -48,8 +80,8 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.example.pages.reservation.select_hotel(reservation.java:55)
-at com.example.tests.reservation_test.testValidReservation(reservation_test.java:31)
+at com.example.pages.reservation.confirmation(reservation.java:110)
+at com.example.tests.reservation_test.test_printed_date(reservation_test.java:61)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -85,8 +117,123 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidReservation -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.example.tests.reservation_test@7c0c77c7]" started-at="2025-03-24T23:06:37 EET" name="close" finished-at="2025-03-24T23:06:37 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- test_printed_date -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.example.tests.reservation_test@5cee5251]" started-at="2025-03-25T10:18:38 EET" name="close" finished-at="2025-03-25T10:18:38 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.reservation_test@5cee5251]" started-at="2025-03-25T10:18:38 EET" name="setup" finished-at="2025-03-25T10:18:42 EET" duration-ms="4942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_printed_hotel_name(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.example.tests.reservation_test@5cee5251]" started-at="2025-03-25T10:18:42 EET" name="test_printed_hotel_name" data-provider="ExcelData" finished-at="2025-03-25T10:19:12 EET" duration-ms="29138" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alexandria]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tolip Hotel Alexandria]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[22/05/2025]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[25/06/2025]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[twin]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[value='1'][name='bedPreference_78883120']"}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [480cce76c6e5c60c4391bd7e9b5d09fd, findElement {using=css selector, value=input[value='1'][name='bedPreference_78883120']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56703/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 480cce76c6e5c60c4391bd7e9b5d09fd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[value='1'][name='bedPreference_78883120']"}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [480cce76c6e5c60c4391bd7e9b5d09fd, findElement {using=css selector, value=input[value='1'][name='bedPreference_78883120']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56703/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 480cce76c6e5c60c4391bd7e9b5d09fd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at com.example.pages.reservation.confirmation(reservation.java:110)
+at com.example.tests.reservation_test.test_printed_hotel_name(reservation_test.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_printed_hotel_name -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.example.tests.reservation_test@5cee5251]" started-at="2025-03-25T10:19:12 EET" name="close" finished-at="2025-03-25T10:19:12 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

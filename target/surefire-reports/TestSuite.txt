@@ -1,17 +1,30 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.86 s <<< FAILURE! - in TestSuite
-com.example.tests.reservation_test.testValidReservation  Time elapsed: 17.865 s  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 81.724 s <<< FAILURE! - in TestSuite
+com.example.tests.reservation_test.test_printed_date[Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2](1)  Time elapsed: 34.669 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-testid='title' and contains(text(), 'Tolip Hotel Alexandria')]/ancestor::div[@data-testid='property-card']//div[contains(@class, 'e4adce92df')]"}
+no such element: Unable to locate element: {"method":"css selector","selector":"input[value='1'][name='bedPreference_78883120']"}
   (Session info: chrome=134.0.6998.118)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0829a86f2cad3d2d8ed5ef7ed36a7df3, findElement {using=xpath, value=//div[@data-testid='title' and contains(text(), 'Tolip Hotel Alexandria')]/ancestor::div[@data-testid='property-card']//div[contains(@class, 'e4adce92df')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61277/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0829a86f2cad3d2d8ed5ef7ed36a7df3
-	at com.example.tests.reservation_test.testValidReservation(reservation_test.java:31)
+Command: [61b6d7076e8e41da1fd0b5dbc7a41898, findElement {using=css selector, value=input[value='1'][name='bedPreference_78883120']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56442/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61b6d7076e8e41da1fd0b5dbc7a41898
+	at com.example.tests.reservation_test.test_printed_date(reservation_test.java:61)
+
+com.example.tests.reservation_test.test_printed_hotel_name[Alexandria, Tolip Hotel Alexandria, 22/05/2025, 25/06/2025, twin, 2](1)  Time elapsed: 28.524 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"input[value='1'][name='bedPreference_78883120']"}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [480cce76c6e5c60c4391bd7e9b5d09fd, findElement {using=css selector, value=input[value='1'][name='bedPreference_78883120']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\omare\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56703/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 480cce76c6e5c60c4391bd7e9b5d09fd
+	at com.example.tests.reservation_test.test_printed_hotel_name(reservation_test.java:38)
 
